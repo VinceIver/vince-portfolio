@@ -492,21 +492,21 @@ const Skills: React.FC = () => {
     >
       <div className="portfolio-skills-antigravity" aria-hidden="true">
         <Antigravity
-          count={320}
-          magnetRadius={10}
-          ringRadius={9}
-          waveSpeed={0.6}
-          waveAmplitude={1.05}
-          particleSize={0.95}
+          count={420}
+          magnetRadius={11}
+          ringRadius={10}
+          waveSpeed={0.62}
+          waveAmplitude={1.15}
+          particleSize={1.1}
           lerpSpeed={0.085}
-          color="#22d3ee"
+          color="#14b8ff"
           autoAnimate
           particleVariance={1}
-          rotationSpeed={0.22}
+          rotationSpeed={0.26}
           depthFactor={0.95}
-          pulseSpeed={2.8}
+          pulseSpeed={3.1}
           particleShape="capsule"
-          fieldStrength={9}
+          fieldStrength={10}
         />
       </div>
       <div className="mx-auto max-w-7xl">

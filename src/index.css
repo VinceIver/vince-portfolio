@@ -715,16 +715,21 @@ textarea {
 
 .portfolio-skills-section {
   overflow: hidden;
+  border-radius: 2rem;
+  background:
+    radial-gradient(circle at 18% 36%, rgba(20, 184, 255, 0.1), transparent 22%),
+    radial-gradient(circle at 78% 42%, rgba(8, 145, 255, 0.09), transparent 20%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.04));
 }
 
 .portfolio-skills-antigravity {
   position: absolute;
   inset: 0;
   z-index: 0;
-  opacity: 0.72;
+  opacity: 0.92;
   pointer-events: none;
-  mask-image: radial-gradient(circle at center, black 58%, rgba(0, 0, 0, 0.82) 76%, transparent 100%);
-  filter: saturate(1.2) brightness(1.08);
+  mask-image: radial-gradient(circle at center, black 74%, rgba(0, 0, 0, 0.92) 88%, transparent 100%);
+  filter: saturate(1.4) brightness(1.18) contrast(1.06);
 }
 
 .portfolio-skills-antigravity canvas {
@@ -734,8 +739,15 @@ textarea {
 }
 
 [data-theme='dark'] .portfolio-skills-antigravity {
-  opacity: 0.58;
-  filter: saturate(1.15) brightness(1);
+  opacity: 0.68;
+  filter: saturate(1.22) brightness(1.02);
+}
+
+[data-theme='dark'] .portfolio-skills-section {
+  background:
+    radial-gradient(circle at 18% 36%, rgba(34, 211, 238, 0.1), transparent 24%),
+    radial-gradient(circle at 78% 42%, rgba(96, 165, 250, 0.1), transparent 22%),
+    linear-gradient(180deg, rgba(17, 24, 39, 0.18), rgba(17, 24, 39, 0.05));
 }
 
 .portfolio-skills-pyramid {
