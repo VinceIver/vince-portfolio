@@ -52,7 +52,7 @@ const Home: React.FC<HomeProps> = ({ theme }) => {
             Cloud Computing 
           </motion.p>
           <motion.p
-            initial={{ opacity: 0, y: 24 }}dadsa
+            initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.65, delay: 0.28 }}
             className="mt-5 max-w-2xl text-base leading-8 text-[var(--portfolio-copy)] md:text-lg"
