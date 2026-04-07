@@ -21,24 +21,24 @@ const itemVariants = {
 
 const projects = [
   {
-    title: 'Portfolio Redesign System',
+    title: 'Cloud Portfolio Experience',
     description:
-      'A responsive personal site with modular sections, refined motion, and a warm editorial visual language.',
-    tag: 'Frontend',
+      'A personal platform that presents cloud, security, and development strengths through a responsive and polished interface.',
+    tag: 'Web Dev',
     icon: MonitorSmartphone,
   },
   {
-    title: 'Operations Dashboard',
+    title: 'Security-Focused Dashboard',
     description:
-      'Data-heavy internal tooling with role-based navigation, crisp states, and layouts tuned for daily use.',
-    tag: 'Full Stack',
+      'An internal-style dashboard concept focused on clear status visibility, operational awareness, and security-minded design decisions.',
+    tag: 'Cybersecurity',
     icon: Layers3,
   },
   {
-    title: 'Service API Platform',
+    title: 'Cloud Service Architecture',
     description:
-      'Backend endpoints and integration workflows for products that need reliability, validation, and maintainable structure.',
-    tag: 'Backend',
+      'A concept for reliable service delivery, deployment thinking, and backend structure shaped by cloud-oriented fundamentals.',
+    tag: 'Cloud',
     icon: ServerCog,
   },
 ];
@@ -47,23 +47,22 @@ const Projects: React.FC = () => {
   return (
     <motion.section
       id="projects"
-      className="portfolio-section px-6 py-20 md:px-10 lg:px-16"
+      className="portfolio-section px-6 md:px-10 lg:px-16"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.14 }}
       variants={containerVariants}
     >
       <div className="mx-auto max-w-7xl">
-        <motion.div variants={itemVariants} className="flex flex-col gap-5 md:flex-row md:items-end md:justify-between">
+        <motion.div variants={itemVariants} className="flex flex-col gap-7 md:flex-row md:items-end md:justify-between">
           <motion.div variants={itemVariants}>
-            <span className="section-kicker">Projects</span>
             <h2 className="section-title max-w-2xl">
-              Recent work with a strong bias toward clean interaction and stable delivery.
+              Projects and concepts that reflect my cloud-first direction.
             </h2>
           </motion.div>
-          <motion.p variants={itemVariants} className="section-copy max-w-xl">
-            These cards are structured as portfolio placeholders, but the section is
-            now styled and organized to match the hero instead of the previous demo scaffold.
+          <motion.p variants={itemVariants} className="section-copy max-w-xl max-md:mx-auto">
+            A selection of work that connects cloud thinking, cybersecurity awareness, and web
+            implementation into practical portfolio-ready ideas.
           </motion.p>
         </motion.div>
 

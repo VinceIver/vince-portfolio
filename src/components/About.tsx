@@ -23,14 +23,14 @@ const About: React.FC = () => {
   return (
     <motion.section
       id="about"
-      className="portfolio-section px-6 py-20 md:px-10 lg:px-16"
+      className="portfolio-section px-6 md:px-10 lg:px-16"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.18 }}
       variants={containerVariants}
     >
       <div className="mx-auto max-w-7xl">
-        <motion.div variants={itemVariants} className="items-center gap-10 lg:grid lg:grid-cols-[minmax(320px,0.95fr)_minmax(0,1fr)] lg:gap-12 xl:gap-16">
+        <motion.div variants={itemVariants} className="items-center gap-12 lg:grid lg:grid-cols-[minmax(320px,0.95fr)_minmax(0,1fr)] lg:gap-14 xl:gap-20">
           <motion.div
             variants={itemVariants}
             className="portfolio-about-image-wrap mx-auto mb-10 w-full max-w-[680px] lg:mb-0"
@@ -42,30 +42,27 @@ const About: React.FC = () => {
             />
           </motion.div>
 
-          <motion.div variants={itemVariants} className="space-y-6">
-            <span className="section-kicker">About</span>
-            <h2 className="section-title max-w-lg">
+          <motion.div variants={itemVariants} className="space-y-8">
+            <h2 className="section-title portfolio-about-title max-w-lg">
               About Me
             </h2>
             <p className="section-copy max-w-2xl">
-              I&apos;m Vince Iver P. Dalwampo, a full stack developer who enjoys building
-              clean, useful, and visually polished digital experiences. I work across
-              frontend interfaces, backend logic, and database-driven features to create
-              applications that feel smooth for users and practical for real-world use.
+              I&apos;m Vince Iver P. Dalwampo, a technology learner and builder with a primary
+              interest in cloud computing, followed by cybersecurity, and then web development.
+              I enjoy understanding how systems are deployed, secured, and experienced by users
+              from end to end.
             </p>
             <p className="section-copy max-w-2xl">
-              My interests are rooted in modern web development, especially React,
-              TypeScript, Tailwind CSS, and building interfaces that are responsive,
-              maintainable, and easy to understand. I also work with backend tools,
-              APIs, and databases to support complete full-stack solutions.
+              My current direction is centered on cloud foundations, infrastructure awareness,
+              and security-minded problem solving. I&apos;m especially interested in how reliable
+              services are designed, monitored, and protected in real-world environments.
             </p>
             <p className="section-copy max-w-2xl">
-              Alongside software development, I also have experience with GIS and mapping
-              workflows using tools like QGIS. That mix of web, data, and spatial work
-              gives me a broader approach when solving technical problems and designing
-              practical systems.
+              Web development remains an important part of my toolkit, particularly with React,
+              TypeScript, and modern frontend systems. It gives me a way to turn technical ideas
+              into usable products while supporting my broader path in cloud and cybersecurity.
             </p>
-            <div className="portfolio-about-meta">
+            <div className="portfolio-about-meta portfolio-about-meta-spaced">
               <span className="portfolio-about-meta-label">Language</span>
               <p className="portfolio-about-meta-value">English, Filipino</p>
             </div>

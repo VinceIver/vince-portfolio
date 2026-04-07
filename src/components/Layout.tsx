@@ -4,6 +4,7 @@ import BottomNav from './BottomNav';
 import Home from './Home';
 import About from './About';
 import Skills from './Skills';
+import Certifications from './Certifications';
 import Projects from './Projects';
 import Contact from './Contact';
 
@@ -40,9 +41,10 @@ const Layout: React.FC = () => {
         {theme === 'light' ? <Moon size={18} /> : <Sun size={18} />}
       </button>
       <main className="portfolio-main">
-        <Home />
+        <Home theme={theme} />
         <About />
         <Skills />
+        <Certifications />
         <Projects />
         <Contact />
       </main>

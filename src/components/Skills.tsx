@@ -28,22 +28,6 @@ const logoClassName = 'portfolio-skill-logo';
 
 const skills: Skill[] = [
   {
-    name: 'MS Excel',
-    category: 'Technical',
-    accent: '#217346',
-    scatterX: -78,
-    scatterY: 48,
-    rotate: -6,
-    logo: (
-      <svg viewBox="0 0 64 64" aria-hidden="true" className={logoClassName}>
-        <path fill="#1d6f42" d="M24 8h25a5 5 0 0 1 5 5v38a5 5 0 0 1-5 5H24z" />
-        <path fill="#185c37" d="M10 16h20v32H10z" />
-        <path fill="#21a366" d="M24 14h16v10H24zM24 28h16v8H24zM24 40h16v10H24z" opacity=".9" />
-        <path fill="#fff" d="m15.2 24.4 3.9-.1 2.4 4.7 2.3-4.7 3.7-.1-4 7 4.1 8.3-3.8.1-2.5-5.1-2.6 5.1-3.8.1 4.3-8.1z" />
-      </svg>
-    ),
-  },
-  {
     name: 'PostgreSQL',
     category: 'Technical',
     accent: '#336791',
@@ -74,6 +58,30 @@ const skills: Skill[] = [
     ),
   },
   {
+    name: 'AWS',
+    category: 'Technical',
+    accent: '#ff9900',
+    scatterX: -64,
+    scatterY: -54,
+    rotate: -4,
+    logo: (
+      <svg viewBox="0 0 64 64" aria-hidden="true" className={logoClassName}>
+        <path
+          fill="#232f3e"
+          d="M13.5 37.2V25.8h4l4.7 7.8 4.7-7.8h4v11.4h-3.1V30.7l-4.6 7.5h-2.2l-4.6-7.5v6.5Zm19.9 0 4.9-11.4h3.2l4.9 11.4H43l-.9-2.3h-4.8l-.9 2.3Zm4.7-4.9h2.8l-1.4-3.6Zm10.4 4.9V25.8H51v8.8h4.6v2.6Zm6.5-4.7c0-.8.6-1.4 1.5-1.4.9 0 1.5.6 1.5 1.4s-.6 1.4-1.5 1.4c-.9 0-1.5-.6-1.5-1.4Z"
+        />
+        <path
+          fill="none"
+          stroke="#ff9900"
+          strokeWidth="2.4"
+          strokeLinecap="round"
+          d="M16.8 45.8c8.1 4.8 22.6 5.1 31.7 1"
+        />
+        <path fill="#ff9900" d="m45.2 44.3 5.6 1.1-4.1 3.4z" />
+      </svg>
+    ),
+  },
+  {
     name: 'GitHub',
     category: 'Technical',
     accent: '#181717',
@@ -86,21 +94,6 @@ const skills: Skill[] = [
           fill="#181717"
           d="M32 9.5C19.6 9.5 9.5 19.7 9.5 32.1c0 10 6.4 18.5 15.2 21.5 1.1.2 1.5-.5 1.5-1.1v-4.3c-6.2 1.4-7.5-2.6-7.5-2.6-1-2.6-2.5-3.2-2.5-3.2-2-.9.2-.9.2-.9 2.2.1 3.4 2.3 3.4 2.3 2 3.3 5.1 2.4 6.4 1.8.2-1.4.8-2.4 1.4-2.9-5-.6-10.2-2.5-10.2-11 0-2.4.9-4.4 2.3-5.9-.2-.6-1-2.9.2-5.9 0 0 1.9-.6 6.2 2.2a21.7 21.7 0 0 1 11.2 0c4.3-2.8 6.2-2.2 6.2-2.2 1.2 3 .4 5.3.2 5.9 1.5 1.5 2.3 3.5 2.3 5.9 0 8.5-5.2 10.4-10.2 10.9.8.7 1.5 2.1 1.5 4.2v6.2c0 .6.4 1.3 1.5 1.1C48 50.6 54.5 42.1 54.5 32.1 54.5 19.7 44.4 9.5 32 9.5Z"
         />
-      </svg>
-    ),
-  },
-  {
-    name: 'VS Code',
-    category: 'Technical',
-    accent: '#007acc',
-    scatterX: 118,
-    scatterY: 36,
-    rotate: 9,
-    logo: (
-      <svg viewBox="0 0 64 64" aria-hidden="true" className={logoClassName}>
-        <path fill="#007acc" d="m46 8 10 5v38l-10 5-26-24z" />
-        <path fill="#1f9cf0" d="M46 8 22 31l24 25V8Z" />
-        <path fill="#1177bb" d="M10 22 22 31 10 42l-4-3V25z" />
       </svg>
     ),
   },
@@ -122,6 +115,42 @@ const skills: Skill[] = [
     ),
   },
   {
+    name: 'Adobe CC',
+    category: 'Technical',
+    accent: '#da1f26',
+    scatterX: -78,
+    scatterY: 48,
+    rotate: -6,
+    logo: (
+      <svg viewBox="0 0 64 64" aria-hidden="true" className={logoClassName}>
+        <defs>
+          <linearGradient id="adobe-cc-gradient" x1="12" y1="10" x2="52" y2="54" gradientUnits="userSpaceOnUse">
+            <stop stopColor="#ff5a5f" />
+            <stop offset="1" stopColor="#c40018" />
+          </linearGradient>
+        </defs>
+        <rect x="8" y="8" width="48" height="48" rx="14" fill="url(#adobe-cc-gradient)" />
+        <path
+          d="M28.5 44.5c-6.3 0-11.5-5.1-11.5-11.5s5.2-11.5 11.5-11.5c3.2 0 6.2 1.3 8.3 3.5a9.8 9.8 0 0 0-4.7 1.4 6.4 6.4 0 1 0 0 13.2c2.1 0 3.9-1 5.1-2.4h3.7c-1.7 4.2-5.8 7.3-10.4 7.3Z"
+          fill="none"
+          stroke="#fff"
+          strokeWidth="3.2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M38.7 44.5c-4.6 0-8.5-3.1-10.1-7.3h3.7c1.1 1.5 2.9 2.4 4.8 2.4a6.4 6.4 0 1 0 0-12.8c-1.9 0-3.7.9-4.8 2.4h-3.7c1.6-4.2 5.5-7.3 10.1-7.3 6.3 0 11.4 5 11.4 11.3 0 6.3-5.1 11.3-11.4 11.3Z"
+          fill="none"
+          stroke="#fff"
+          strokeWidth="3.2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          opacity=".95"
+        />
+      </svg>
+    ),
+  },
+  {
     name: 'Firebase',
     category: 'Technical',
     accent: '#ff9100',
@@ -137,26 +166,17 @@ const skills: Skill[] = [
     ),
   },
   {
-    name: 'AWS',
+    name: 'VS Code',
     category: 'Technical',
-    accent: '#ff9900',
-    scatterX: -64,
-    scatterY: -54,
-    rotate: -4,
+    accent: '#007acc',
+    scatterX: 118,
+    scatterY: 36,
+    rotate: 9,
     logo: (
       <svg viewBox="0 0 64 64" aria-hidden="true" className={logoClassName}>
-        <path
-          fill="#232f3e"
-          d="M13.5 37.2V25.8h4l4.7 7.8 4.7-7.8h4v11.4h-3.1V30.7l-4.6 7.5h-2.2l-4.6-7.5v6.5Zm19.9 0 4.9-11.4h3.2l4.9 11.4H43l-.9-2.3h-4.8l-.9 2.3Zm4.7-4.9h2.8l-1.4-3.6Zm10.4 4.9V25.8H51v8.8h4.6v2.6Zm6.5-4.7c0-.8.6-1.4 1.5-1.4.9 0 1.5.6 1.5 1.4s-.6 1.4-1.5 1.4c-.9 0-1.5-.6-1.5-1.4Z"
-        />
-        <path
-          fill="none"
-          stroke="#ff9900"
-          strokeWidth="2.4"
-          strokeLinecap="round"
-          d="M16.8 45.8c8.1 4.8 22.6 5.1 31.7 1"
-        />
-        <path fill="#ff9900" d="m45.2 44.3 5.6 1.1-4.1 3.4z" />
+        <path fill="#007acc" d="m46 8 10 5v38l-10 5-26-24z" />
+        <path fill="#1f9cf0" d="M46 8 22 31l24 25V8Z" />
+        <path fill="#1177bb" d="M10 22 22 31 10 42l-4-3V25z" />
       </svg>
     ),
   },
@@ -224,20 +244,6 @@ const skills: Skill[] = [
     ),
   },
   {
-    name: 'JavaScript',
-    category: 'Programming',
-    accent: '#f7df1e',
-    scatterX: -110,
-    scatterY: 30,
-    rotate: -7,
-    logo: (
-      <svg viewBox="0 0 64 64" aria-hidden="true" className={logoClassName}>
-        <rect x="10" y="10" width="44" height="44" rx="6" fill="#f7df1e" />
-        <path fill="#1a1a1a" d="M27 44.2c.9 1.5 2 2.6 4.1 2.6 1.7 0 2.8-.8 2.8-2 0-1.4-1.1-1.9-3-2.7l-1-.4c-2.7-1.1-4.6-2.5-4.6-5.4 0-2.7 2.1-4.8 5.3-4.8 2.3 0 4 .8 5.2 2.9l-2.8 1.8c-.6-1.1-1.3-1.5-2.4-1.5s-1.8.7-1.8 1.5c0 1 .7 1.4 2.4 2.1l1 .4c3.2 1.4 5.1 2.7 5.1 5.8 0 3.3-2.6 5.1-6.1 5.1-3.5 0-5.8-1.7-6.9-3.9zm-12.8-.3 2.8-1.7c.5.9.9 1.7 2 1.7 1 0 1.7-.4 1.7-1.9V31.8h3.5V42c0 4-2.3 5.8-5.7 5.8-3 0-4.7-1.5-5.6-3.9z" />
-      </svg>
-    ),
-  },
-  {
     name: 'React',
     category: 'Programming',
     accent: '#61dafb',
@@ -254,6 +260,34 @@ const skills: Skill[] = [
     ),
   },
   {
+    name: 'TypeScript',
+    category: 'Programming',
+    accent: '#3178c6',
+    scatterX: 66,
+    scatterY: -86,
+    rotate: 10,
+    logo: (
+      <svg viewBox="0 0 64 64" aria-hidden="true" className={logoClassName}>
+        <rect x="10" y="10" width="44" height="44" rx="6" fill="#3178c6" />
+        <path fill="#fff" d="M21 24h22v4h-9v23h-4V28h-9zm15.6 18.6c1.2 1.9 2.9 3 5.1 3 1.8 0 3-.9 3-2.2 0-1.6-1.2-2.1-3.3-3l-1.1-.5c-3.1-1.3-5.1-2.8-5.1-6 0-3 2.3-5.3 5.9-5.3 2.6 0 4.5.9 5.8 3.3l-3.2 2c-.7-1.3-1.5-1.9-2.6-1.9-1.2 0-2 .8-2 1.8 0 1.2.8 1.7 2.8 2.6l1.1.5c3.6 1.5 5.7 3 5.7 6.4 0 3.7-2.9 5.8-6.8 5.8-3.8 0-6.2-1.8-7.4-4.1z" />
+      </svg>
+    ),
+  },
+  {
+    name: 'JavaScript',
+    category: 'Programming',
+    accent: '#f7df1e',
+    scatterX: -110,
+    scatterY: 30,
+    rotate: -7,
+    logo: (
+      <svg viewBox="0 0 64 64" aria-hidden="true" className={logoClassName}>
+        <rect x="10" y="10" width="44" height="44" rx="6" fill="#f7df1e" />
+        <path fill="#1a1a1a" d="M27 44.2c.9 1.5 2 2.6 4.1 2.6 1.7 0 2.8-.8 2.8-2 0-1.4-1.1-1.9-3-2.7l-1-.4c-2.7-1.1-4.6-2.5-4.6-5.4 0-2.7 2.1-4.8 5.3-4.8 2.3 0 4 .8 5.2 2.9l-2.8 1.8c-.6-1.1-1.3-1.5-2.4-1.5s-1.8.7-1.8 1.5c0 1 .7 1.4 2.4 2.1l1 .4c3.2 1.4 5.1 2.7 5.1 5.8 0 3.3-2.6 5.1-6.1 5.1-3.5 0-5.8-1.7-6.9-3.9zm-12.8-.3 2.8-1.7c.5.9.9 1.7 2 1.7 1 0 1.7-.4 1.7-1.9V31.8h3.5V42c0 4-2.3 5.8-5.7 5.8-3 0-4.7-1.5-5.6-3.9z" />
+      </svg>
+    ),
+  },
+  {
     name: 'Node.js',
     category: 'Programming',
     accent: '#68a063',
@@ -264,6 +298,32 @@ const skills: Skill[] = [
       <svg viewBox="0 0 64 64" aria-hidden="true" className={logoClassName}>
         <path fill="#68a063" d="m32 8 19 11v26L32 56 13 45V19z" />
         <path fill="#fff" d="M32 17c-7.2 0-13 5.8-13 13 0 5.4 3.3 10 8.1 12l1.7-3.2c-3.3-1.2-5.6-4.4-5.6-8.1 0-4.8 3.9-8.8 8.8-8.8s8.8 4 8.8 8.8c0 3.7-2.3 6.9-5.6 8.1l1.7 3.2c4.8-2 8.1-6.6 8.1-12 0-7.2-5.8-13-13-13Z" />
+      </svg>
+    ),
+  },
+  {
+    name: 'Express.js',
+    category: 'Programming',
+    accent: '#111111',
+    scatterX: 116,
+    scatterY: -26,
+    rotate: 7,
+    logo: (
+      <svg viewBox="0 0 64 64" aria-hidden="true" className={logoClassName}>
+        <path fill="#111111" d="M12 24h40v4H12zm0 12h27v4H12zm0-6h40v4H12zm0 12h20v4H12zm31.6-4.2 8.4 8.2h-5.9l-5.4-5.4Z" />
+      </svg>
+    ),
+  },
+  {
+    name: 'Tailwind CSS',
+    category: 'Programming',
+    accent: '#06b6d4',
+    scatterX: -96,
+    scatterY: 60,
+    rotate: -5,
+    logo: (
+      <svg viewBox="0 0 64 64" aria-hidden="true" className={logoClassName}>
+        <path fill="#06b6d4" d="M32 18c-8 0-13 4-15 12 3-4 6.5-5.5 10.5-4.4 2.3.6 4 2.3 5.9 4.2 3.1 3 6.7 6.5 13.6 6.5 8 0 13-4 15-12-3 4-6.5 5.5-10.5 4.4-2.3-.6-4-2.3-5.9-4.2C42.5 21.5 38.9 18 32 18Zm-15 18c-8 0-13 4-15 12 3-4 6.5-5.5 10.5-4.4 2.3.6 4 2.3 5.9 4.2 3.1 3 6.7 6.5 13.6 6.5 8 0 13-4 15-12-3 4-6.5 5.5-10.5 4.4-2.3-.6-4-2.3-5.9-4.2C27.5 39.5 23.9 36 17 36Z" />
       </svg>
     ),
   },
@@ -294,46 +354,6 @@ const skills: Skill[] = [
         <path fill="#1572b6" d="M12 8h40l-4 44-16 4-16-4z" />
         <path fill="#33a9dc" d="M32 52V12h16l-3.4 36z" />
         <path fill="#fff" d="M32 19H21.8l.8 9H32v-3.7h-5.6l-.3-2.9H32Zm0 15.8-4.4-1.2-.3-3.2h-4l.6 6.1 8.1 2.2zM42.2 19H32v3.7h6.2l-.4 4.3H32v3.7h5.5l-.5 5.1-5 1.3v3.9l8.2-2.2 1.1-12.1.1-.8z" />
-      </svg>
-    ),
-  },
-  {
-    name: 'TypeScript',
-    category: 'Programming',
-    accent: '#3178c6',
-    scatterX: 66,
-    scatterY: -86,
-    rotate: 10,
-    logo: (
-      <svg viewBox="0 0 64 64" aria-hidden="true" className={logoClassName}>
-        <rect x="10" y="10" width="44" height="44" rx="6" fill="#3178c6" />
-        <path fill="#fff" d="M21 24h22v4h-9v23h-4V28h-9zm15.6 18.6c1.2 1.9 2.9 3 5.1 3 1.8 0 3-.9 3-2.2 0-1.6-1.2-2.1-3.3-3l-1.1-.5c-3.1-1.3-5.1-2.8-5.1-6 0-3 2.3-5.3 5.9-5.3 2.6 0 4.5.9 5.8 3.3l-3.2 2c-.7-1.3-1.5-1.9-2.6-1.9-1.2 0-2 .8-2 1.8 0 1.2.8 1.7 2.8 2.6l1.1.5c3.6 1.5 5.7 3 5.7 6.4 0 3.7-2.9 5.8-6.8 5.8-3.8 0-6.2-1.8-7.4-4.1z" />
-      </svg>
-    ),
-  },
-  {
-    name: 'Tailwind CSS',
-    category: 'Programming',
-    accent: '#06b6d4',
-    scatterX: -96,
-    scatterY: 60,
-    rotate: -5,
-    logo: (
-      <svg viewBox="0 0 64 64" aria-hidden="true" className={logoClassName}>
-        <path fill="#06b6d4" d="M32 18c-8 0-13 4-15 12 3-4 6.5-5.5 10.5-4.4 2.3.6 4 2.3 5.9 4.2 3.1 3 6.7 6.5 13.6 6.5 8 0 13-4 15-12-3 4-6.5 5.5-10.5 4.4-2.3-.6-4-2.3-5.9-4.2C42.5 21.5 38.9 18 32 18Zm-15 18c-8 0-13 4-15 12 3-4 6.5-5.5 10.5-4.4 2.3.6 4 2.3 5.9 4.2 3.1 3 6.7 6.5 13.6 6.5 8 0 13-4 15-12-3 4-6.5 5.5-10.5 4.4-2.3-.6-4-2.3-5.9-4.2C27.5 39.5 23.9 36 17 36Z" />
-      </svg>
-    ),
-  },
-  {
-    name: 'Express.js',
-    category: 'Programming',
-    accent: '#111111',
-    scatterX: 116,
-    scatterY: -26,
-    rotate: 7,
-    logo: (
-      <svg viewBox="0 0 64 64" aria-hidden="true" className={logoClassName}>
-        <path fill="#111111" d="M12 24h40v4H12zm0 12h27v4H12zm0-6h40v4H12zm0 12h20v4H12zm31.6-4.2 8.4 8.2h-5.9l-5.4-5.4Z" />
       </svg>
     ),
   },
@@ -424,17 +444,19 @@ const chunkSkills = (items: Skill[]): Skill[][] => {
 
 type SkillItemProps = {
   index: number;
+  isMobile: boolean;
   skill: Skill;
   progress: MotionValue<number>;
 };
 
-const SkillItem: React.FC<SkillItemProps> = ({ index, skill, progress }) => {
+const SkillItem: React.FC<SkillItemProps> = ({ index, isMobile, skill, progress }) => {
   const prefersReducedMotion = useReducedMotion();
-  const x = useTransform(progress, [0, 1], [prefersReducedMotion ? 0 : skill.scatterX, 0]);
-  const y = useTransform(progress, [0, 1], [prefersReducedMotion ? 0 : skill.scatterY, 0]);
-  const rotate = useTransform(progress, [0, 1], [prefersReducedMotion ? 0 : skill.rotate, 0]);
-  const opacity = useTransform(progress, [0, 0.25, 1], [0.2, 0.75, 1]);
-  const scale = useTransform(progress, [0, 1], [prefersReducedMotion ? 1 : 0.9, 1]);
+  const shouldScatter = !prefersReducedMotion && !isMobile;
+  const x = useTransform(progress, [0, 1], [shouldScatter ? skill.scatterX : 0, 0]);
+  const y = useTransform(progress, [0, 1], [shouldScatter ? skill.scatterY : 0, 0]);
+  const rotate = useTransform(progress, [0, 1], [shouldScatter ? skill.rotate : 0, 0]);
+  const opacity = useTransform(progress, [0, 0.25, 1], shouldScatter ? [0.2, 0.75, 1] : [1, 1, 1]);
+  const scale = useTransform(progress, [0, 1], [shouldScatter ? 0.9 : 1, 1]);
 
   return (
     <motion.article
@@ -464,11 +486,26 @@ const SkillItem: React.FC<SkillItemProps> = ({ index, skill, progress }) => {
 
 const Skills: React.FC = () => {
   const [activeFilter, setActiveFilter] = useState<FilterKey>('All');
+  const [isMobile, setIsMobile] = useState(false);
   const sectionRef = useRef<HTMLElement | null>(null);
   const { scrollYProgress } = useScroll({
     target: sectionRef,
     offset: ['start 92%', 'center 38%'],
   });
+
+  React.useEffect(() => {
+    if (typeof window === 'undefined') {
+      return;
+    }
+
+    const mediaQuery = window.matchMedia('(max-width: 767px)');
+    const syncIsMobile = () => setIsMobile(mediaQuery.matches);
+
+    syncIsMobile();
+    mediaQuery.addEventListener('change', syncIsMobile);
+
+    return () => mediaQuery.removeEventListener('change', syncIsMobile);
+  }, []);
 
   const visibleSkills = useMemo(() => {
     if (activeFilter === 'All') {
@@ -478,7 +515,7 @@ const Skills: React.FC = () => {
     return skills.filter((skill) => skill.category === activeFilter);
   }, [activeFilter]);
 
-  const skillRows = useMemo(() => chunkSkills(visibleSkills), [visibleSkills]);
+  const skillRows = useMemo(() => (isMobile ? [visibleSkills] : chunkSkills(visibleSkills)), [isMobile, visibleSkills]);
 
   return (
     <motion.section
@@ -511,11 +548,10 @@ const Skills: React.FC = () => {
       </div>
       <div className="mx-auto max-w-7xl">
         <motion.div variants={itemVariants} className="relative z-10 mx-auto max-w-4xl text-center">
-          <span className="section-kicker">Skills</span>
           <h2 className="section-title mt-5">The Tech Behind My Work</h2>
-          <p className="section-copy mx-auto mt-6 max-w-3xl">
-            A collection of tools, frameworks, and languages that I use to design and
-            develop full-stack applications and data-driven solutions.
+          <p className="section-copy section-copy--center mx-auto mt-6 max-w-3xl">
+            A mix of cloud, security, and development tools that support the path I&apos;m building:
+            cloud computing first, cybersecurity second, and web development as a strong third lane.
           </p>
         </motion.div>
 
@@ -538,19 +574,20 @@ const Skills: React.FC = () => {
         <motion.div
           layout
           variants={itemVariants}
-          className="portfolio-skills-pyramid relative z-10 mx-auto mt-12 max-w-6xl"
+          className={`portfolio-skills-pyramid relative z-10 mx-auto mt-12 max-w-6xl ${isMobile ? 'is-mobile' : ''}`}
         >
           <AnimatePresence mode="popLayout">
             {skillRows.map((row, rowIndex) => (
               <motion.div
                 layout
                 key={`${activeFilter}-row-${rowIndex}`}
-                className="portfolio-skills-row"
+                className={`portfolio-skills-row ${isMobile ? 'is-mobile' : ''}`}
               >
                 {row.map((skill, skillIndex) => (
                   <SkillItem
                     key={skill.name}
                     index={rowIndex * 10 + skillIndex}
+                    isMobile={isMobile}
                     skill={skill}
                     progress={scrollYProgress}
                   />

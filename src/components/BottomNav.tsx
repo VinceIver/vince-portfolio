@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import {
+  Award,
   FolderKanban,
   Home,
   Mail,
@@ -10,6 +11,7 @@ import {
 const navItems = [
   { name: 'Home', icon: Home, href: '#home' },
   { name: 'About', icon: UserRound, href: '#about' },
+  { name: 'Certs', icon: Award, href: '#certifications' },
   { name: 'Projects', icon: FolderKanban, href: '#projects' },
   { name: 'Contact', icon: Mail, href: '#contact' },
 ];
@@ -41,7 +43,7 @@ const BottomNav: React.FC = () => {
     <motion.nav
       initial={false}
       animate={{
-        y: isVisible ? 0 : -24,
+        y: isVisible ? 0 : 24,
         opacity: isVisible ? 1 : 0,
       }}
       transition={{ duration: 0.32, ease: 'easeOut' }}
@@ -53,9 +55,13 @@ const BottomNav: React.FC = () => {
           key={item.name}
           onClick={() => scrollToSection(item.href)}
           className={`portfolio-mobile-button ${index === 0 ? 'is-active' : ''}`}
+          aria-label={item.name}
+          title={item.name}
         >
-          <item.icon size={16} />
-          <span>{item.name}</span>
+          <item.icon size={24} strokeWidth={2.15} />
+          <span className="portfolio-mobile-tooltip" role="tooltip">
+            {item.name}
+          </span>
         </button>
       ))}
     </motion.nav>

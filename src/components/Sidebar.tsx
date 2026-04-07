@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import {
+  Award,
   FolderKanban,
   Home,
   Mail,
@@ -10,6 +11,7 @@ import {
 const navItems = [
   { name: 'Home', icon: Home, href: '#home' },
   { name: 'About', icon: UserRound, href: '#about' },
+  { name: 'Certs', icon: Award, href: '#certifications' },
   { name: 'Projects', icon: FolderKanban, href: '#projects' },
   { name: 'Contact', icon: Mail, href: '#contact' },
 ];
