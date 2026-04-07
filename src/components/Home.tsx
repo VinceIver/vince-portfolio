@@ -8,6 +8,7 @@ type HomeProps = {
 
 const Home: React.FC<HomeProps> = ({ theme }) => {
   const sectionRef = useRef<HTMLElement | null>(null);
+  const baseUrl = import.meta.env.BASE_URL;
   const { scrollYProgress } = useScroll({
     target: sectionRef,
     offset: ['start start', 'end start'],
@@ -18,7 +19,7 @@ const Home: React.FC<HomeProps> = ({ theme }) => {
   const imageRotate = useTransform(scrollYProgress, [0, 1], [0, -5]);
   const arcShift = useTransform(scrollYProgress, [0, 1], [0, 30]);
   const introEase: [number, number, number, number] = [0.22, 1, 0.36, 1];
-  const heroImage = theme === 'dark' ? '/images/Hero2.jpg' : '/images/Hero.jpeg';
+  const heroImage = theme === 'dark' ? `${baseUrl}images/Hero2.jpg` : `${baseUrl}images/Hero.jpeg`;
 
   return (
     <motion.section
@@ -69,7 +70,7 @@ const Home: React.FC<HomeProps> = ({ theme }) => {
             <motion.a
               whileHover={{ y: -3, scale: 1.015 }}
               whileTap={{ scale: 0.985 }}
-              href="/cv.pdf"
+              href={`${baseUrl}cv.pdf`}
               className="portfolio-button portfolio-button--accent max-md:w-full max-md:justify-center"
             >
               <Download size={20} />
