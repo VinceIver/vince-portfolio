@@ -567,9 +567,9 @@ const Skills: React.FC = () => {
         />
       </div>
       <div className="mx-auto max-w-7xl">
-        <motion.div variants={itemVariants} className="relative z-10 mx-auto max-w-4xl text-center">
+        <motion.div variants={itemVariants} className="relative z-10 mx-auto flex w-full max-w-4xl flex-col items-center text-center">
           <h2 className="section-title mt-5">The Tech Behind My Work</h2>
-          <p className="section-copy section-copy--center mx-auto mt-6 max-w-3xl">
+          <p className="section-copy section-copy--center mt-6 w-full max-w-3xl">
             A mix of cloud, security, and development tools that support the path I&apos;m building:
             cloud computing first, cybersecurity second, and web development as a strong third lane.
           </p>
