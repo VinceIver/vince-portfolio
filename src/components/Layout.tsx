@@ -21,7 +21,7 @@ const Layout: React.FC = () => {
       return savedTheme;
     }
 
-    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    return 'light';
   });
 
   useEffect(() => {
