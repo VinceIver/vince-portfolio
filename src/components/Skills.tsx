@@ -442,6 +442,23 @@ const chunkSkills = (items: Skill[]): Skill[][] => {
   return rows;
 };
 
+const chunkSkillsMobile = (items: Skill[]): Skill[][] => {
+  const rows: Skill[][] = [];
+  const pattern = [3, 2, 1];
+  let cursor = 0;
+  let patternIndex = 0;
+
+  while (cursor < items.length) {
+    const remaining = items.length - cursor;
+    const size = Math.min(pattern[patternIndex % pattern.length], remaining);
+    rows.push(items.slice(cursor, cursor + size));
+    cursor += size;
+    patternIndex += 1;
+  }
+
+  return rows;
+};
+
 type SkillItemProps = {
   index: number;
   isMobile: boolean;
@@ -515,7 +532,10 @@ const Skills: React.FC = () => {
     return skills.filter((skill) => skill.category === activeFilter);
   }, [activeFilter]);
 
-  const skillRows = useMemo(() => (isMobile ? [visibleSkills] : chunkSkills(visibleSkills)), [isMobile, visibleSkills]);
+  const skillRows = useMemo(
+    () => (isMobile ? chunkSkillsMobile(visibleSkills) : chunkSkills(visibleSkills)),
+    [isMobile, visibleSkills],
+  );
 
   return (
     <motion.section
@@ -582,6 +602,7 @@ const Skills: React.FC = () => {
                 layout
                 key={`${activeFilter}-row-${rowIndex}`}
                 className={`portfolio-skills-row ${isMobile ? 'is-mobile' : ''}`}
+                style={isMobile ? ({ '--skill-columns': row.length } as React.CSSProperties) : undefined}
               >
                 {row.map((skill, skillIndex) => (
                   <SkillItem

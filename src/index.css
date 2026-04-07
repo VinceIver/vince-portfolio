@@ -815,9 +815,10 @@ h6 {
 
 .portfolio-skills-row.is-mobile {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  width: 100%;
+  grid-template-columns: repeat(var(--skill-columns, 2), minmax(0, 1fr));
+  width: min(100%, calc(var(--skill-columns, 2) * 9rem));
   gap: 0.75rem;
+  margin-inline: auto;
 }
 
 @media (min-width: 768px) {
@@ -1399,10 +1400,6 @@ h6 {
 
   .portrait-shell {
     width: min(94vw, 360px);
-  }
-
-  .portfolio-skills-row.is-mobile {
-    grid-template-columns: 1fr;
   }
 
   .portfolio-form-panel,
