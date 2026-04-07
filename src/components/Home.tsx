@@ -49,7 +49,7 @@ const Home: React.FC<HomeProps> = ({ theme }) => {
             transition={{ duration: 0.65, delay: 0.2 }}
             className="mt-6 max-w-2xl text-2xl font-semibold text-[var(--portfolio-ink)] md:text-4xl"
           >
-            Cloud Computing Enthusiast
+            Cloud Computing 
           </motion.p>
           <motion.p
             initial={{ opacity: 0, y: 24 }}
